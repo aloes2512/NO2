@@ -7,6 +7,3 @@ NO2 Neues Repository um Status 2020-10-23 zu dokumentieren
 6. Detrend und Zusammenhang zwischen Emissionen und Immissionen ermitteln
 7. Einbringen der bisher erstellten Codes 02Analysen
 
-
-
-A line I wrote on my local computer
