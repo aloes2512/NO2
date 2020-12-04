@@ -15,7 +15,7 @@ library(grid)
 library(forecast)
 library(ggmap)
 
-register_google("AIzaSyA_I6bmTgaNCZT9gGf2kh0Rl9zuRz9kDOw") # Ist API unter der Geolocation angmeldet wurde
+
 # alle metadaten einlesen
 Meta_data <- data.table::fread("meta/all_sites.csv")
 # Dimension SQ_M
