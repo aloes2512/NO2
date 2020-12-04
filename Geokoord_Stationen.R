@@ -2,6 +2,9 @@
 url_conv <- "https://www.engineeringtoolbox.com/utm-latitude-longitude-d_1370.html"
 browseURL(url_conv)
 load("~/Documents/Luftqualitaet/Analysen/Stationsdaten.RData")
+library(ggmap)
+register_google("AIzaSyA_I6bmTgaNCZT9gGf2kh0Rl9zuRz9kDOw") # Ist API unter der Geolocation angmeldet wurde
+
 dec_coord <- Stationsdaten %>% 
   dplyr::select(Stationsnummer,Messstelle,Nord,Ost) %>% 
   group_by(Stationsnummer,Messstelle) %>% nest()
