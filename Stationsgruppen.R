@@ -4,7 +4,7 @@ BW_stations_NO2_tbl$name <- BW_stations_NO2_tbl$name %>% as_factor()
 # Teillisten erstellen
 station_names <- c("Alb","Brn","Can","Egg","Frei","Friedri","Heid","Heil","Kar",
                    "Lbg_4","Lbg_Friedr","Man","Nck","Odw","Rt_","Rtl","Sws")
-
+BW
 rurallist <- c ("Sws","Alb","Odw")
 traficlist <- c("Nck","Lbg_Friedr","Rtl")
 urbanlist <- c ("Brn","Can","Egg","Frei","Friedri","Heid","Heil","Kar","Lbg_4","Man","Rt_")
