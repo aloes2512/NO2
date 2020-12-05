@@ -1,3 +1,6 @@
+URL <- "https://petolau.github.io/Forecast-electricity-consumption-with-similar-day-approach-in-R/"
+browseURL(URL)
+
 library(tidyverse)
 library(data.table)
 library(ggmap)
@@ -5,7 +8,6 @@ library(grid)
 library(gridExtra)
 load("~/Documents/Luftqualitaet/Daten/BW/BW.RData")
 summary(BW.all_data)
-register_google("AIzaSyA_I6bmTgaNCZT9gGf2kh0Rl9zuRz9kDOw") # Ist API unter der Geolocation angmeldet wurde
 # alle metadaten einlesen 
 # Meta_data <- data.table::fread("meta/all_sites.csv")
 #"SITE_ID"     "INDUSTRY"  "SUB_INDUSTRY"          "LAT" "LNG"       "SQ_M"   
@@ -22,17 +24,6 @@ Meta_station <- Stationsdaten %>%
 Meta_data_BW <- Meta_station %>% as.data.table()
 str(Meta_data_BW)
 names(Meta_data_BW)
-# Kartendarstellung
-map <- get_map(location = c(lon = 9.226859, lat = 48.67722), zoom = 8)
-ggmap(map) + 
-  geom_point(data = Meta_station, aes(x = LNG, y = LAT),
-             size = 2, alpha = .2,shape = 2,col = "red") + 
- ggtitle ("Baden Württemberg
-Untersuchte Messtationen")+
-theme(axis.title.x = element_text(colour = "white"),
-      axis.title.y = element_text(colour = "white"),
-      axis.text.x = element_text(colour = "black"),
-      axis.text.y = element_text(colour = "black"))
 # Lade NO2 Messwerte       
 load("~/Documents/Luftqualitaet/02Analysen/BW_stations_NO2_tbl.RData")
 BW_stations_NO2_tbl$station <- as_factor(BW_stations_NO2_tbl$station)
