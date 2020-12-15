@@ -4,13 +4,13 @@ library(sp)
 library(raster)
 library(ggmap)
 load("~/Documents/Luftqualitaet/Analysen/NO2/Stationsliste_2.RData")
-lonlat <- Stationsliste %>% dplyr::select("longitude","latitude")
+lonlat <- Stationsliste_decimal %>% dplyr::select("longitude","latitude")
 # Google Cloud Platform zur Erstellung von API im Adressbuch gespeichert
-findkey # Lookup in gitignore
-#register_google(findkey) # Ist API unter der Geolocation angmeldet wurde
+#findkey in Notizen# Lookup in gitignore
+# # Ist API unter der Geolocation angmeldet wurde
 # Kartendarstellung
-Meta_station <- Stationsliste %>% 
-  dplyr::select(ID = "Stationsnummer",
+Meta_station <- Stationsliste_decimal %>% 
+  dplyr::select(ID = "Station",
                 "Messstelle",
                  longitude,
                  latitude 

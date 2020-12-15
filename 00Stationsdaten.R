@@ -2,7 +2,9 @@ library(tidyverse)
 library(readr)
 library(readxl)
 library(knitr)
-
+library(ggmap)
+library(gridExtra)
+library(grid)
 BW_Stationsdaten_LUBW <- read_delim("~/Google Drive/BW_dat/BW_Stationsdaten_LUBW.csv",
 ";", escape_double = FALSE, col_types = cols(`Inbetriebnahme Datum` = col_date(format = "%d.%m.%Y"),
 `Stilllege Datum` = col_date(format = "%d.%m.%Y")),
@@ -31,47 +33,43 @@ Stationsdaten$Ort <-Stationsdaten$Ort %>% as_factor()
 Stationsdaten$Messstelle <- Stationsdaten$Messstelle  %>% as_factor()
 Stationsdaten$Komponente <- as_factor(Stationsdaten$Komponente )
 Stationsdaten$`Aktiv (Y/N)` <- Stationsdaten$`Aktiv (Y/N)`%>% as_factor()
+Stationsdaten$Stationsnummer <- as_factor(Stationsdaten$Stationsnummer)
+Stationsdaten$Einheit <- as_factor(Stationsdaten$Einheit)
+Stationsdaten$Straße <- as_factor(Stationsdaten$Straße)
 summary(Stationsdaten)
 save(Stationsdaten, file = "Stationsdaten.RData")
+# Teillisten
 Stationsdaten_tbl <- Stationsdaten %>% dplyr::select(Stationsnummer,Messstelle,Ost,Nord)
-Stationsdaten$Stationsnummer <-Stationsdaten$Stationsnummer %>% as_factor()
-
 Stationsliste <- Stationsdaten %>% group_by(Stationsnummer) %>% summarise(Messstelle = first(Messstelle),Ost_UTM =first(Ost),Nord_UTM=first(Nord))
-
+class(Stationsliste)
 save(Stationsliste, file = "Stationsliste.RData")
-Stationsliste %>% kable() 
+# Koordinaten als csv2 exportieren
+Stationskoordinaten <- Stationsliste %>% dplyr::select(Station= "Stationsnummer",LON = "Ost_UTM",LAT = "Nord_UTM")
+write.csv2(Stationskoordinaten,file = "Stationskoordinaten.csv")
+#open the csv file in a simple TEXT EDITOR , copy 
+browseURL("https://www.engineeringtoolbox.com/utm-latitude-longitude-d_1370.html")
+# convert UTM csv file to textfile and add column zone (all values = 32)
+#copy textfile online converter in engineering toolbox and convert
+# copy and paste data
+Liste_UTM_degrees <-read.csv("Liste_UTM_degrees.txt")
+Stationskoordinaten <-cbind(Stationskoordinaten,Liste_UTM_degrees) 
+Stationskoordinaten <- Stationskoordinaten %>% dplyr::select(-c(LON,LAT))
+Stationsliste <- inner_join(Stationsliste,Stationskoordinaten,by = c("Stationsnummer" = "Station")) %>% dplyr::select(-c(northing,easting))
+Stationsliste$zone <- NULL
+# ======================================================
 # als pdf exportieren
-
-
-#library(grid)
-d <- head(Stationsliste)
-g <- tableGrob(d)
-plot(g)
-grid.newpage()
-ggsave(g, )
-
+library(gridExtra)
+pdf("Stationsliste.pdf", height = 11, width = 8.5 ) # für DIN A4
+grid.table(Stationsliste)
+dev.off()
 # =====================================================
 NROW(Stationsliste) #29
 rurallist <- c ("4467","47650","76118")  #  'Sws'  'Alb' 'Odw'                                              
 traficlist <- c("76361","76359","76364") #  'Nck' 'Lbg_Friedr' 'Rtl'
 Stationsliste %>% str()
-Stationsliste %>% filter(Stationsnummer == "76364")  
-Stationsliste$Stationsnummer 
-rural_stations <- vector("list", length = length(rurallist))
-rural_tbl <- tibble()
-names(rural_stations) <- rurallist
-for (nmb in c ("4467","47650","76118")) { 
-  rural_stations[[nmb]] <- Stationsliste %>% filter(Stationsnummer == nmb) 
-  rural_tbl <- bind_rows( rural_tbl,rural_stations[[nmb]])
-  }
-trafic_stations <- vector("list", length = length(traficlist))
-names(trafic_stations) <- traficlist
-trafic_tbl <- tibble()
-for (nmb in traficlist) { 
-  trafic_stations[[nmb]] <- Stationsliste %>% filter(Stationsnummer == nmb) 
-  trafic_tbl <- bind_rows( trafic_tbl,trafic_stations[[nmb]])
-}
-urban_tbl <- anti_join(Stationsliste,rural_tbl) %>% anti_join(trafic_tbl)
+trafic_stations <- Stationsliste %>% filter(Stationsnummer %in% traficlist)  
+rural_stations <- Stationsliste %>% filter(Stationsnummer %in% rurallist)
+urban_stations <- anti_join(Stationsliste,rural_stations) %>% anti_join(trafic_stations)
 
 
 #=====================================================
@@ -80,9 +78,6 @@ save(trafic_tbl, file = "Verkehrs_stations_list.RData")
 save(rural_tbl,file = "rural_stations_list.RData" )
 save(Stationsliste, file = "BW_stations_list.RData")
 #=====================================================
-kable(Stationsliste)
-Stationsliste %>% filter (Stationsnummer == 4443)
-AbbListe <- Stationsliste %>% filter ()
 #=======================================================
 ## Stationsdaten in Dezimalgrad angeben für Darstellung mit Google maps API
 # convert UTM to Decimal long & lat
@@ -269,3 +264,4 @@ Stationsdaten %>% head()
 
 Stationsdaten <-Stationsdaten %>% 
   right_join(Stat_Coord)
+save(Stationsdaten,file = "~/Documents/Luftqualitaet/Analysen/Stationsdaten.RData")
