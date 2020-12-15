@@ -4,43 +4,27 @@ library(sp)
 library(raster)
 library(ggmap)
 load("~/Documents/Luftqualitaet/Analysen/NO2/Stationsliste_2.RData")
-lonlat <- Stationsliste_decimal %>% dplyr::select("longitude","latitude")
-# first try: "https://rspatial.org/raster/spatial/3-vectordata.html"
-URL <- "https://rspatial.org/raster/spatial/3-vectordata.html"
-browseURL(URL)
-pts <- SpatialPoints(lonlat)
-class(pts)
-showDefault(pts) # bbox  min :longitude 7.764504; latitude 47.659764
-                 # bbox  max: longitude 9.486118; latitude 49.475063
-crdref <- CRS('+proj=longlat +datum=WGS84 +towgs84=1000000,0,0')
-pts <- SpatialPoints(lonlat, proj4string=crdref)
-pts
-df <- Stationsliste_decimal %>% dplyr::select(Station,Messstelle) 
-df$ID <- 1: NROW(df)
-df <- df %>%
-  dplyr::select(ID,Station,Messstelle)
-ptsdf <- SpatialPointsDataFrame(pts, data=df)
-str(ptsdf)
-showDefault(ptsdf)
-plot(ptsdf)
+lonlat <- Stationsliste %>% dplyr::select("longitude","latitude")
 # Google Cloud Platform zur Erstellung von API im Adressbuch gespeichert
 findkey # Lookup in gitignore
 #register_google(findkey) # Ist API unter der Geolocation angmeldet wurde
 # Kartendarstellung
-Meta_station <- Stationsliste_decimal %>% 
-  dplyr::select(ID = "Station",
+Meta_station <- Stationsliste %>% 
+  dplyr::select(ID = "Stationsnummer",
                 "Messstelle",
                  longitude,
                  latitude 
                 )
 # Karte von Google herunterladem
-map <- get_map( c(lon = 8.5 , lat = 48.55), zoom = 8)
+map <- get_googlemap( c(lon = 8.5 , lat = 48.55), zoom = 8,type = "roadmap")
 map_BW <- map
-ggmap(map_BW,maptype = "hybrid") + 
+ggmap(map_BW,maptype = "roadmap") + 
   geom_point(data = Meta_station, aes(x =longitude, y = latitude),
-             size = 3, alpha = .3,shape = 20,col = "red") + 
+             size = 7, shape = 20,col = "red") + 
+  geom_point(data = lonlat,aes(x = longitude,y = latitude),
+             size = 5, alpha = 0.5,shape = 12,col = "black")+
   ggtitle ("Baden Württemberg
-Untersuchte Messtationen")+
+untersuchte Messstationen")+
   theme(axis.title.x = element_text(colour = "white"),
         axis.title.y = element_text(colour = "white"),
         axis.text.x = element_text(colour = "black"),
