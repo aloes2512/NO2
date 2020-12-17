@@ -1,26 +1,53 @@
 install.packages("tidyverse")
 library(tidyverse)
 library(lubridate)
+library(xts)
+# Reutlingen Lederstrasse Ost ergänzen
+library(readxl)
+Reutlingen_Leder_alle <- read_excel("~/Documents/Luftqualitaet/Daten/Reutlingen/Reutlingen_Leder_alle.xlsx",
+col_names = FALSE, skip = 25) %>% dplyr::select(c(1,4,5))
+names(Reutlingen_Leder_alle) <- c("Stationsnummer","datetime","NO2")
+Reutlingen_Leder_alle$datetime <- ymd_hm(Reutlingen_Leder_alle$datetime )
+Reutlingen_Leder_alle$NO2 <-Reutlingen_Leder_alle$NO2 %>% as.numeric()
+Reutlingen_Leder_alle$NO2 <-Reutlingen_Leder_alle$NO2 %>% replace_na(mean(.,na.rm=TRUE))
+NROW(Reutlingen_Leder_alle) # 120462
+#RT_leder <- ReulingenLederOst2017bis2019 <- read_xls("~/Documents/Luftqualitaet/Daten/Reutlingen/Reutlingen_Leder_alle.xlsx",
+#col_types = c("numeric", "text", "text",
+#"text", "numeric", "text", "text"),skip = 20) %>% dplyr::select(Stationsnummer,datetime ="Datum / Uhrzeit",NO2 = Wert)
+
+no2_detrend$Rt_leder.no2 <- Reutlingen_Leder_alle
+
+x <- no2_detrend$Rt_leder.no2 %>% 
+  mutate(datetime =as.numeric(no2_detrend$Rt_leder.no2$datetime),NO2) %>% 
+  as.data.frame() %>% 
+  lm(.,formula = (NO2 ~ datetime))
+
+
+# ===============================
 load("~/Documents/Gesundheit/Luftqualitaet/Analysen/NO2_detrend.RData")     # Daten vom 2020-04-25
-load("~/Documents/Gesundheit/Luftqualitaet/Analysen/luft-qualitaet/.RData") # Daten vom 2020-04-28
+no2_detrend$Rt_leder.no2 <- Reutlingen_Leder_alle
+no2_detrend$Rt_leder.no2$residuals<-x$residuals
 summary(no2_detrend)
-no2_detrend$Odw.no2
-# Datei bereinigen : Datens??tze mit fehlenden NO2 Werten eliminieren
+
+
+
 # =======================================================
 # #Erzeugung einer "named list" vgl R4ds Seite 402
-list_names <-names(no2_detrend) # [1] "Odw.no2"    "Sws.no2"    "Alb.no2"    "Brn.no2"    "Rt.no2"     "Can.no2"    "Lbg.no2"    "Lbg.Fr.no2" "Nck.no2"
-my_data <- vector("list",length = length(list_names))
-names(my_data) <- list_names
+list_names <-names(no2_detrend) # [1] "Odw.no2"    "Sws.no2"    
+                                #"Alb.no2"    "Brn.no2"    "Rt.no2"     "Can.no2"    
+#                               "Lbg.no2"    "Lbg.Fr.no2" "Nck.no2" "Rt_leder.no2"
+NO2_data <- vector("list",length = length(list_names))
+names(NO2_data) <- list_names
 #Zeilen mit fehlenden NO2 eliminieren
 for (nm in list_names){
-  my_data[[nm]] <- no2_detrend[[nm]][!is.na(no2_detrend[[nm]]$NO2),]
-  my_data[[nm]]$Name <- rep(str_replace(nm,".no2",""), NROW(my_data[[nm]]))
+  NO2_data[[nm]] <- no2_detrend[[nm]][!is.na(no2_detrend[[nm]]$NO2),]
+  NO2_data[[nm]]$Name <- rep(str_replace(nm,".no2",""), NROW(NO2_data[[nm]]))
 }
-NROW(no2_detrend) #9
-head(no2_detrend,1) # tibble  Odw.no2 mit: Station datetime  NO2 residuals
+NROW(NO2_data) #10
+head(NO2_data,1) # tibble  Odw.no2 mit: Station datetime  NO2 residuals
 # Alle Daten in einer Liste my_stations abspeichern
 my_stations <- tibble(names = list_names,
-                      data = no2_detrend)
+                      data = NO2_data)
 my_stations[[2]] # Zum sammeln aller NO2 Daten alle Daten pro Station
 # Lineares Model auf die Datens??tze jeder Station anwenden
 ##----------------
@@ -28,12 +55,12 @@ stat.model <- function (df) {
   lm(NO2 ~ datetime, data = df)
 }
 
-my_stations <- my_stations %>%
-  mutate( model = map(data,stat.model)) # my_stations$data ist Liste von df
+my_stations <- my_stations %>%    # my_stations ist Liste mit Namen und dataframes df 
+  mutate( model = map(data,stat.model)) # my_stations$data ist  df aus Liste
 
 names(my_stations) #"names" "data"  "model"
-head(my_stations)
-my_stations$data[[1]] %>% head()
+tail(my_stations)
+my_stations$data[[10]] %>% tail()
 # Ergebnisse in Liste my_stations
 my_stations$model[["Odw.no2"]] # parameter der lm`s`
 NROW(my_stations$model$Odw.no2$residuals) #91990 Time difference of 96422 hours
@@ -41,26 +68,27 @@ my_stations$model$Odw.no2$fitted.values %>% head()
 ## Beispiele der ausgewerteten Daten
 summary(my_stations$model$Nck.no2$residuals) #   Min.  1st Qu.   Median     Mean  3rd Qu.     Max.
                                             #  19.515  -32.582   -4.841    0.000   27.857  306.885
-head(my_stations$model$Nck.no2$coefficients)  #  (Intercept)   datetime (= slope)
+(my_stations$model$Nck.no2$coefficients)  #  (Intercept)   datetime (= slope)
                                               # 2.401625e+02 -1.108000e-07
+summary(my_stations$model$Rt_leder.no2$residuals)
 # =========================================================
 # sichern der Modelparameter aus linearer Regression
-save(my_stations, file = "Stations_data.RData")
+save(my_stations, file = "Stations_data_lm.RData")
 #========================================================
-load("Stations_data.RData")
+load("Stations_data_lm.RData")
 #=========================================================
 ## Grafische Darstellungen
 plot.fun <- function( df) {df %>%
     as_tibble() %>%
     ggplot(aes(x = datetime,y = NO2))+
-    geom_point(size = 0.1,alpha = 0.1)+
+    geom_point(size = 0.1,alpha = 0.3)+
     geom_smooth(data = df, method = "auto",col = "red",span = 0.01)+
-    labs ( x = "", y = "NO2 [ug/m3]")+
-    ggtitle(paste("Station",df[1,1],df[1,4]),
-            subtitle = "Trend (Mehr- jahresmittelwerte) rote Linie")
+    labs ( x = "", y = "NO2[µg/m³]")+
+    ggtitle(paste("Station",df[1,5],"Nummer",df[1,1]),
+            subtitle = "Trend (Mehr-jahresmittelwerte) rote Linie")
 
 }
-
+plot.fun(my_stations$data[["Rt_leder.no2"]])
 plots <- vector ("list",length = length(my_stations$names))
 dfrms <- vector ("list",length = length(my_stations$names))
 names(plots) <- my_stations$names
@@ -69,6 +97,8 @@ for (nm in my_stations$names) {
   dfrms[[nm]] <- my_stations$data[[nm]]
   plots[[nm]] <- plot.fun(dfrms[[nm]])
 }
+print(plots$Nck.no2)
+print(plots$Rt_leder.no2)
 plots %>% walk(print)
 # Speichern im WD mit Namen "trend.png"
 # Graph speichern
@@ -155,7 +185,7 @@ for (nm in list_names){
 my.plots %>% walk(print)
 # Mapping on List BW_data
 
-my_data[["Odw.no2"]] %>% str()
+NO2_data[["Odw.no2"]] %>% str()
 # Darstellung Regressionsgerade
 
 int <- vector ("double",length= length(list_names))
