@@ -55,7 +55,7 @@ for (nm in names(comp_list)){
 
 summary(BW_station_data)
 BW_station_data[["Sws"]] %>% head()
-save(BW_station_data,file = "RData/BW_17_stationen.RData")
+save(BW_station_data,file = "BW_17_stationen.RData")
 
 
-#
+
