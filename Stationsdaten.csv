@@ -1,0 +1,286 @@
+Stationsnummer;Messstelle;Komponente;Einheit;Messhöhe über Grund in m;Höhe der Messstation über NN in m;PLZ;Ort;Straße;Ost;Nord;Inbetriebnahme Datum;Stilllege Datum;Aktiv (Y/N)
+39253;Bernhausen;Globalstrahlung;W/m²;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Kohlenmonoxid;mg/m³;4;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Kohlenmonoxid;mg/m³;0;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Niederschlag;mm;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Ozon;µg/m³;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Schwebstaub PM 10 (Streulicht);µg/m³;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Schwefeldioxid;µg/m³;0;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Schwefeldioxid;µg/m³;4;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Stickstoffdioxid;µg/m³;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Stickstoffmonoxid;µg/m³;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Temperatur;°C;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Windgeschwindigkeit;m/s;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+39253;Bernhausen;Windrichtung;°;NA;370;70794;Bernhausen;Heubergstraße;516700;5391600;1989-12-01;NA;Ja
+4445;Eggenstein;Globalstrahlung;W/m²;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Kohlenmonoxid;mg/m³;4;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Kohlenmonoxid;mg/m³;0;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Luftdruck;mbar;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Niederschlag;mm;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Ozon;µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Schwebstaub PM 10 (Streulicht);µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Schwefeldioxid;µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Schwefeldioxid;µg/m³;0;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Stickstoffdioxid;µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Stickstoffmonoxid;µg/m³;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Temperatur;°C;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Windgeschwindigkeit;m/s;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4445;Eggenstein;Windrichtung;°;NA;109;76344;Eggenstein;Gewann Zigeunerschlag;456600;5436100;1976-09-01;NA;Ja
+4462;Freiburg;Globalstrahlung;W/m²;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Kohlenmonoxid;mg/m³;0;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Kohlenmonoxid;mg/m³;4;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Luftdruck;mbar;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Niederschlag;mm;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Ozon;µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Schwebstaub PM 10 (Streulicht);µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Schwefeldioxid;µg/m³;0;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Schwefeldioxid;µg/m³;4;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Stickstoffdioxid;µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Stickstoffmonoxid;µg/m³;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Temperatur;°C;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Windgeschwindigkeit;m/s;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4462;Freiburg;Windrichtung;°;NA;262;79106;Freiburg;Fehrenbachallee;412800;5317100;1979-06-01;NA;Ja
+4471;Friedrichshafen;Globalstrahlung;W/m²;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Kohlenmonoxid;mg/m³;0;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Kohlenmonoxid;mg/m³;4;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Luftdruck;mbar;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Niederschlag;mm;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Ozon;µg/m³;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Schwebstaub PM 10 (Streulicht);µg/m³;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Schwefeldioxid;µg/m³;0;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Schwefeldioxid;µg/m³;4;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Stickstoffdioxid;µg/m³;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Stickstoffmonoxid;µg/m³;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Temperatur;°C;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Windgeschwindigkeit;m/s;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4471;Friedrichshafen;Windrichtung;°;NA;403;88048;Friedrichshafen;Ehlerstraße;536500;5278600;1987-01-01;NA;Ja
+4453;Heidelberg;Globalstrahlung;W/m²;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Kohlenmonoxid;mg/m³;4;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Kohlenmonoxid;mg/m³;0;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Niederschlag;mm;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Ozon;µg/m³;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Schwebstaub PM 10 (Streulicht);µg/m³;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Schwefeldioxid;µg/m³;0;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Schwefeldioxid;µg/m³;4;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Stickstoffdioxid;µg/m³;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Stickstoffmonoxid;µg/m³;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Temperatur;°C;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Windgeschwindigkeit;m/s;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4453;Heidelberg;Windrichtung;°;NA;112;69120;Heidelberg;Berliner Straße (Ecke Blumenthalstraße);476500;5474100;1984-01-01;NA;Ja
+4461;Heilbronn;Globalstrahlung;W/m²;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Kohlenmonoxid;mg/m³;0;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Kohlenmonoxid;mg/m³;4;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Niederschlag;mm;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Ozon;µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Schwebstaub PM 10 (Streulicht);µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Schwefeldioxid;µg/m³;0;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Schwefeldioxid;µg/m³;4;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Stickstoffdioxid;µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Stickstoffmonoxid;µg/m³;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Temperatur;°C;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Windgeschwindigkeit;m/s;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4461;Heilbronn;Windrichtung;°;NA;155;74076;Heilbronn;Hans-Rießer-Straße;516300;5445800;1979-11-01;NA;Ja
+4463;Ludwigsburg;Kohlenmonoxid;mg/m³;0;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Kohlenmonoxid;mg/m³;4;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Niederschlag;mm;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Ozon;µg/m³;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Schwebstaub PM 10 (Streulicht);µg/m³;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Schwefeldioxid;µg/m³;0;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Schwefeldioxid;µg/m³;4;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Stickstoffdioxid;µg/m³;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Stickstoffmonoxid;µg/m³;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Windgeschwindigkeit;m/s;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+4463;Ludwigsburg;Windrichtung;°;NA;302;71636;Ludwigsburg;Weimarstraße;512600;5416200;1982-03-01;NA;Ja
+76359;Ludwigsburg Friedrichstraße;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;299;71638;Friedrichshafen;Friedrichstraße;513900;5415100;2012-08-13;2020-03-16;Ja
+76359;Ludwigsburg Friedrichstraße;Stickstoffdioxid;µg/m³;NA;299;71638;Friedrichshafen;Friedrichstraße;513900;5415100;2012-08-13;2020-03-16;Ja
+76359;Ludwigsburg Friedrichstraße;Stickstoffmonoxid;µg/m³;NA;299;71638;Friedrichshafen;Friedrichstraße;513900;5415100;2012-08-13;2020-03-16;Ja
+4473;Mannheim-Mitte;Globalstrahlung;W/m²;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Kohlenmonoxid;mg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Kohlenmonoxid;mg/m³;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Niederschlag;mm;3;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Ozon;µg/m³;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Ozon;µg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Schwefeldioxid;µg/m³;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Schwefeldioxid;µg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Stickstoffdioxid;µg/m³;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Stickstoffdioxid;µg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Stickstoffmonoxid;µg/m³;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Stickstoffmonoxid;µg/m³;0;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Temperatur;°C;4;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Windgeschwindigkeit;m/s;10;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+4473;Mannheim-Mitte;Windrichtung;°;10;94;68165;Mannheim;Reichskanzler-Müller-Straße;462100;5480400;1974-12-31;2013-12-30;Nein
+76118;Odenwald;Globalstrahlung;W/m²;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Kohlenmonoxid;mg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Kohlenmonoxid;mg/m³;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Luftdruck;mbar;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Niederschlag;mm;3;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Ozon;µg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Ozon;µg/m³;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Schwefeldioxid;µg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Schwefeldioxid;µg/m³;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Stickstoffdioxid;µg/m³;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Stickstoffdioxid;µg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Stickstoffmonoxid;µg/m³;0;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Stickstoffmonoxid;µg/m³;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Temperatur;°C;4;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Windgeschwindigkeit;m/s;10;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+76118;Odenwald;Windrichtung;°;10;530;69259;Wilhelmsfeld;Schriesheimer Kopf;482100;5479100;1999-07-10;2011-05-31;Nein
+4470;Reutlingen;Globalstrahlung;W/m²;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Kohlenmonoxid;mg/m³;0;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Kohlenmonoxid;mg/m³;4;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Niederschlag;mm;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Ozon;µg/m³;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Schwebstaub PM 10 (Streulicht);µg/m³;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Schwefeldioxid;µg/m³;0;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Schwefeldioxid;µg/m³;4;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Stickstoffdioxid;µg/m³;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Stickstoffmonoxid;µg/m³;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Temperatur;°C;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Windgeschwindigkeit;m/s;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+4470;Reutlingen;Windrichtung;°;NA;392;72770;Reutlingen;Friedrich-Ebert-Straße Gelände Pomologie;515300;5370600;1982-02-01;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Kohlenmonoxid;mg/m³;NA;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Schwebstaub PM 10 (Streulicht);µg/m³;0;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Stickstoffdioxid;µg/m³;NA;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+76364;Reutlingen Lederstraße-Ost;Stickstoffmonoxid;µg/m³;NA;382;72764;Reutlingen;Lederstraße;515500;5370700;2007-03-21;NA;Ja
+47650;Schwäbische Alb;Globalstrahlung;W/m²;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Kohlenmonoxid;mg/m³;0;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Kohlenmonoxid;mg/m³;4;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Luftdruck;mbar;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Niederschlag;mm;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Ozon;µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Schwebstaub PM 10 (Streulicht);µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Schwefeldioxid;µg/m³;4;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Schwefeldioxid;µg/m³;0;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Stickstoffdioxid;µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Stickstoffmonoxid;µg/m³;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Temperatur;°C;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Windgeschwindigkeit;m/s;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+47650;Schwäbische Alb;Windrichtung;°;NA;797;72820;Erpfingen;Sonnenbühl-Erpfingen, Sportplatz;515300;5354700;1994-04-27;NA;Ja
+4467;Schwarzwald-Süd;Globalstrahlung;W/m²;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Kohlenmonoxid;mg/m³;0;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Kohlenmonoxid;mg/m³;4;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Luftdruck;mbar;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Niederschlag;mm;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Ozon;µg/m³;4;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Ozon;µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Schwebstaub PM 10 (Streulicht);µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Schwefeldioxid;µg/m³;0;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Schwefeldioxid;µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Stickstoffdioxid;µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Stickstoffmonoxid;µg/m³;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Temperatur;°C;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Windgeschwindigkeit;m/s;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+4467;Schwarzwald-Süd;Windrichtung;°;NA;90;79244;Münstertal;Kälbelescheuer;407500;5295900;1984-01-01;NA;Ja
+76361;Stuttgart Am Neckartor;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;239;70190;Stuttgart;Am Neckartor;514000;5403900;2003-12-01;NA;Ja
+76361;Stuttgart Am Neckartor;Schwebstaub PM 10 (Streulicht);µg/m³;0;239;70190;Stuttgart;Am Neckartor;514000;5403900;2003-12-01;NA;Ja
+76361;Stuttgart Am Neckartor;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;239;70190;Stuttgart;Am Neckartor;514000;5403900;2003-12-01;NA;Ja
+76361;Stuttgart Am Neckartor;Stickstoffdioxid;µg/m³;NA;239;70190;Stuttgart;Am Neckartor;514000;5403900;2003-12-01;NA;Ja
+76361;Stuttgart Am Neckartor;Stickstoffmonoxid;µg/m³;NA;239;70190;Stuttgart;Am Neckartor;514000;5403900;2003-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Kohlenmonoxid;mg/m³;NA;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Ozon;µg/m³;0;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Ozon;µg/m³;4;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Schwebstaub PM 10 (Streulicht);µg/m³;0;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Stickstoffdioxid;µg/m³;NA;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+55006;Stuttgart Arnulf-Klett-Platz;Stickstoffmonoxid;µg/m³;NA;243;70174;Stuttgart;Arnulf-Klett-Platz;513200;5403300;1994-12-01;NA;Ja
+9999136;Stuttgart Hauptstätter Straße;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;258;70187;Stuttgart;Hauptstätter Straße;512500;5401500;2015-11-01;2019-01-02;Ja
+9999136;Stuttgart Hauptstätter Straße;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;258;70187;Stuttgart;Hauptstätter Straße;512500;5401500;2015-11-01;2019-01-02;Ja
+9999136;Stuttgart Hauptstätter Straße;Stickstoffdioxid;µg/m³;0;258;70187;Stuttgart;Hauptstätter Straße;512500;5401500;2015-11-01;2019-01-02;Ja
+9999136;Stuttgart Hauptstätter Straße;Stickstoffdioxid;µg/m³;NA;258;70187;Stuttgart;Hauptstätter Straße;512500;5401500;2015-11-01;2019-01-02;Ja
+9999136;Stuttgart Hauptstätter Straße;Stickstoffmonoxid;µg/m³;0;258;70187;Stuttgart;Hauptstätter Straße;512500;5401500;2015-11-01;2019-01-02;Ja
+9999139;Stuttgart Hauptstätter Straße-West;Schwebstaub PM 10 (Streulicht);µg/m³;0;260;70187;Stuttgart;Hauptstätter Straße;512500;5401400;2017-07-01;NA;Ja
+76362;Stuttgart Hohenheimer Straße;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;303;70184;Stuttgart;Hohenheimer Straße;513500;5401700;2003-12-01;NA;Ja
+76362;Stuttgart Hohenheimer Straße;Stickstoffdioxid;µg/m³;NA;303;70184;Stuttgart;Hohenheimer Straße;513500;5401700;2003-12-01;NA;Ja
+76362;Stuttgart Hohenheimer Straße;Stickstoffmonoxid;µg/m³;NA;303;70184;Stuttgart;Hohenheimer Straße;513500;5401700;2003-12-01;NA;Ja
+76363;Stuttgart Siemensstraße;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;296;70469;Stuttgart;Siemensstraße;512800;5406400;2009-02-01;NA;Nein
+76363;Stuttgart Siemensstraße;Stickstoffdioxid;µg/m³;0;296;70469;Stuttgart;Siemensstraße;512800;5406400;2009-02-01;NA;Nein
+76363;Stuttgart Siemensstraße;Stickstoffmonoxid;µg/m³;0;296;70469;Stuttgart;Siemensstraße;512800;5406400;2009-02-01;NA;Nein
+9999137;Stuttgart Stadtgarten;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;253;70174;Stuttgart;Stadtgarten;512600;5403100;2015-11-01;2019-01-02;Ja
+9999137;Stuttgart Stadtgarten;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;253;70174;Stuttgart;Stadtgarten;512600;5403100;2015-11-01;2019-01-02;Ja
+9999137;Stuttgart Stadtgarten;Stickstoffdioxid;µg/m³;0;253;70174;Stuttgart;Stadtgarten;512600;5403100;2015-11-01;2019-01-02;Ja
+9999137;Stuttgart Stadtgarten;Stickstoffmonoxid;µg/m³;0;253;70174;Stuttgart;Stadtgarten;512600;5403100;2015-11-01;2019-01-02;Ja
+76413;Stuttgart Waiblinger Straße;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;223;70372;Stuttgart;Waiblinger Straße;516100;5405600;2012-08-01;2014-12-30;Nein
+4452;Stuttgart-Bad Cannstatt;Globalstrahlung;W/m²;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Kohlenmonoxid;mg/m³;4;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Kohlenmonoxid;mg/m³;0;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Luftdruck;mbar;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Niederschlag;mm;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Ozon;µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Schwebstaub PM 10 (Streulicht);µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Schwefeldioxid;µg/m³;4;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Schwefeldioxid;µg/m³;0;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Stickstoffdioxid;µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Stickstoffmonoxid;µg/m³;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Temperatur;°C;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Windgeschwindigkeit;m/s;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4452;Stuttgart-Bad Cannstatt;Windrichtung;°;NA;250;70374;Stuttgart;Gnesener Straße;516800;5406200;1981-01-01;NA;Ja
+4451;Stuttgart-Hafen;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;235;70329;Stuttgart;Am Mittelkai;519500;5399900;1981-01-01;2003-10-28;Nein
+4449;Stuttgart-Zuffenhausen;Kohlenmonoxid;mg/m³;4;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Kohlenmonoxid;mg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Niederschlag;mm;3;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Ozon;µg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Ozon;µg/m³;4;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Schwefeldioxid;µg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Schwefeldioxid;µg/m³;4;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Stickstoffdioxid;µg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Stickstoffdioxid;µg/m³;4;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Stickstoffmonoxid;µg/m³;0;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Stickstoffmonoxid;µg/m³;4;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Windgeschwindigkeit;m/s;10;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+4449;Stuttgart-Zuffenhausen;Windrichtung;°;10;272;70435;Stuttgart;Ludwigsburger-/Frankenstraße;512600;5408000;1980-12-01;2011-05-31;Nein
+53277;Karlsruhe Reinhold-Frank-Straße;Kohlenmonoxid;mg/m³;NA;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+53277;Karlsruhe Reinhold-Frank-Straße;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+53277;Karlsruhe Reinhold-Frank-Straße;Schwebstaub PM 10 (Streulicht);µg/m³;0;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+53277;Karlsruhe Reinhold-Frank-Straße;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+53277;Karlsruhe Reinhold-Frank-Straße;Stickstoffdioxid;µg/m³;NA;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+53277;Karlsruhe Reinhold-Frank-Straße;Stickstoffmonoxid;µg/m³;NA;119;75185;Karlsruhe;Reinhold-Frank-Straße;455100;5428500;1994-03-10;NA;Ja
+4441;Karlsruhe-Mitte;Kohlenmonoxid;mg/m³;4;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Kohlenmonoxid;mg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Ozon;µg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Ozon;µg/m³;4;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Schwefeldioxid;µg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Schwefeldioxid;µg/m³;4;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Stickstoffdioxid;µg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Stickstoffdioxid;µg/m³;4;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Stickstoffmonoxid;µg/m³;0;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4441;Karlsruhe-Mitte;Stickstoffmonoxid;µg/m³;4;117;76131;Karlsruhe;Durlacher Tor (Kinderklinik);457400;5428700;1975-12-31;2011-05-31;Nein
+4444;Karlsruhe-Nordwest;Globalstrahlung;W/m²;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Kohlenmonoxid;mg/m³;0;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Kohlenmonoxid;mg/m³;4;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Luftdruck;mbar;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Niederschlag;mm;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Ozon;µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Schwebstaub PM 10 (Gravimetrie);µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Schwebstaub PM 10 (Streulicht);µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Schwebstaub PM 2_5 (Gravimetrie);µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Schwefeldioxid;µg/m³;4;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Schwefeldioxid;µg/m³;0;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Stickstoffdioxid;µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Stickstoffmonoxid;µg/m³;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Temperatur;°C;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Windgeschwindigkeit;m/s;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4444;Karlsruhe-Nordwest;Windrichtung;°;NA;114;76185;Karlsruhe;Daimlerstraße;452800;5430800;1985-03-01;NA;Ja
+4443;Karlsruhe-West;Schwebstaub PM 10 (Gravimetrie);µg/m³;0;115;76185;Karlsruhe;Vogesenstraße/Karl-Metz-Brücke;452700;5428600;1976-01-01;2003-09-30;Nein
