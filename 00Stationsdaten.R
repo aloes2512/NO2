@@ -42,7 +42,6 @@ save(Stationsdaten, file = "Stationsdaten.RData")
 Stationsdaten_tbl <- Stationsdaten %>% dplyr::select(Stationsnummer,Messstelle,Ost,Nord)
 Stationsliste <- Stationsdaten %>% group_by(Stationsnummer) %>% summarise(Messstelle = first(Messstelle),Ost_UTM =first(Ost),Nord_UTM=first(Nord))
 class(Stationsliste)
-save(Stationsliste, file = "Stationsliste.RData")
 # Koordinaten als csv2 exportieren
 Stationskoordinaten <- Stationsliste %>% dplyr::select(Station= "Stationsnummer",LON = "Ost_UTM",LAT = "Nord_UTM")
 Stationskoordinaten$zone <- 32
@@ -52,14 +51,14 @@ browseURL("https://www.engineeringtoolbox.com/utm-latitude-longitude-d_1370.html
 # convert UTM csv file to textfile and add column zone (all values = 32)
 #copy textfile online converter in engineering toolbox and convert
 # copy and paste data
-Stationskoordinaten <-read_csv2("Liste_UTM_degrees.csv")
+Stationskoordinaten <-read_csv("Liste_UTM_degrees.txt")
 Stationskoordinaten $zone <- NULL
-Stationskoordinaten$Station <- as_factor(Stationskoordinaten$Station)
-Stationsliste <- Stationsdaten %>% select(Station = "Stationsnummer", Messstelle) %>% 
-  group_by(Station) %>% arrange(.,Station) %>% 
-  left_join(Stationskoordinaten, by = "Station") %>% 
-  nest(data = -c(Station,Messstelle,longitude,latitude)) %>% dplyr::select(-c(data))
+dim(Stationsliste) #29 4
+dim(Stationskoordinaten)
+Stationsliste <-bind_cols(Stationsliste,Stationskoordinaten) %>%
+  dplyr::select(-c(Nord_UTM,Ost_UTM ))
 write.csv2(Stationsliste,file = "Stationsliste.csv" )
+save(Stationsliste, file = "Stationsliste.RData")
 # ======================================================
 # als pdf exportieren
 library(gridExtra)
