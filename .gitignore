@@ -4,3 +4,14 @@
 .Ruserdata
 Google_map.R
 Ignore
+rural_NO2.RData
+urban_NO2_tbl
+trafic_NO2.RData
+Geokoord_Stationen_ohneAPI.R
+BW_station_NO2.RData
+BW_stations_NO2_tbl.RData
+openmp-9.0.1-darwin17-Release.tar.gz
+AIzaSyC-nMColMBreTDOK-riSbZ91BCevgeIFKQ
+register_google("AIzaSyC-nMColMBreTDOK-riSbZ91BCevgeIFKQ")
+Convert_UTM_decimal.R
+Stationskoordinaten_1.csv
