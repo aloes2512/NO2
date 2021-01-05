@@ -4,6 +4,7 @@
 .Ruserdata
 Google_map.R
 Ignore
+<<<<<<< HEAD
 rural_NO2.RData
 urban_NO2_tbl
 trafic_NO2.RData
@@ -15,3 +16,9 @@ AIzaSyC-nMColMBreTDOK-riSbZ91BCevgeIFKQ
 register_google("AIzaSyC-nMColMBreTDOK-riSbZ91BCevgeIFKQ")
 Convert_UTM_decimal.R
 Stationskoordinaten_1.csv
+=======
+Stationsliste.RData
+README
+>>>>>>> e625a818b874170e9fcc111ba03ddf6a27537ebd
+Stationskoordinaten.csv
+Stationsliste.csv
