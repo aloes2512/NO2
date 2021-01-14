@@ -24,6 +24,7 @@ Meta_station <- Stationsdaten %>%
 Meta_data_BW <- Meta_station %>% as.data.table()
 str(Meta_data_BW)
 names(Meta_data_BW)
+kable(Meta_data_BW)
 # Lade NO2 Messwerte       
 load("~/Documents/Luftqualitaet/02Analysen/BW_stations_NO2_tbl.RData")
 BW_stations_NO2_tbl$station <- as_factor(BW_stations_NO2_tbl$station)

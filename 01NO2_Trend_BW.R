@@ -49,3 +49,4 @@ levels(BW_stations_model$station)<- c("Schwb.Alb","Bernhausen","Bad Cannstatt",
                                             "Reutlg.Friedr.str","Reutlingen Lederstr.",
                                             "Schwarzw.Süd")
 write_csv2(BW_stations_model,"~/documents/Luftqualitaet/Analysen/Berichte/RegrModell.csv")
+head(BW_stations_model)

@@ -54,8 +54,28 @@ for (nm in names(comp_list)){
   }
 
 summary(BW_station_data)
-BW_station_data[["Sws"]] %>% head()
+
 save(BW_station_data,file = "BW_17_stationen.RData")
 
-
-
+# Beispiel Sws
+BW_station_data[["Sws"]] %>% head(10) %>% names()
+NO2 <- BW_station_data[["Sws"]]$NO2 %>% 
+  as.data.frame()
+NROW(NO2) #173159     
+NO  <- BW_station_data[["Sws"]]$NO_ %>% 
+  as.data.frame() %>% 
+  filter(datetime <= last(NO2$datetime))
+O3 <- BW_station_data[["Sws"]]$O3 
+NROW(O3) # 173159
+Sws_data <- bind_cols(NO2,NO = NO$NO_,O3 = O3$O3) %>% 
+  dplyr::select(station,name,datetime,NO2,NO,O3)
+Sws_data_long <- Sws_data %>% pivot_longer(cols = c(NO2,NO),names_to = "Komp")
+str(Sws_data_long) 
+summary(Sws_data_long)
+ggplot(Sws_data)+
+  geom_point(mapping = aes(x = NO,y= NO2),size = 0.1,alpha= 0.5)+
+  geom_smooth(method = "lm",mapping = aes(x = NO,y= NO2))
+ggplot(Sws_data)+
+  geom_smooth(method = "lm",mapping = aes(x= datetime,y = NO2))+
+  facet_wrap(~c(NO2,NO))
+    
