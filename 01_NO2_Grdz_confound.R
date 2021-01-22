@@ -20,7 +20,8 @@ Nck_NO2 %>%  ggplot(aes(x = datetime))+
   geom_smooth(aes(y = NO2),col = "red",linetype = 1)+
   ggtitle("NO2-Immissionen Am Neckartor",
   subtitle = " Mittelwerte(rot),
-Trend(schw.Linie) & Abweichung vom Trend (rot)")+
+Trend(schw.Linie) & 
+  Abweichung vom Trend (rot gestrichelt)")+
   labs( x = "", y = "NO2[μg/m3]")
 # als Funktion
 detrend_station <- function(df, nm) {
