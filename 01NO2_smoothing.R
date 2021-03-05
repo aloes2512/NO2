@@ -55,10 +55,11 @@ Can_dat %>% filter(datetime > ymd("2000-06-30")&datetime < ymd("2019-07-01"))%>%
           subtitle= "anteilige  Heizgsimmissionen (schwarz)" )+
   labs (x = "",y = "NO2 [μg/m3]" )
 # Sws daten
-Sws_NO2 <- BW.all_data %>% .$Sws %>% .$Sws.no2%>%
+BW.all_data %>% .$Sws
+Sws_NO2 <- BW.all_data %>% .$Sws %>% .$NO2%>%
   filter(NO2 != is.na(NO2))
 
-Sws_Temp <- BW.all_data$Sws$Sws.temp %>% 
+Sws_Temp <- BW.all_data$Sws$Temp %>% 
   filter(!is.na(Temp))
 Sws_dat <- inner_join(Sws_NO2,Sws_Temp)
 Sws_dat <- Sws_dat %>% 
@@ -127,7 +128,7 @@ cor(RT.pm_dat$NO2_fit,RT.pm_dat$Heizimm) #[1] 0.9278111
 # Bernhausen
 Brn_Temp <- BW.all_data$Brn$Brn.Temp%>%
   filter(Temp != is.na(Temp))
-Brn_NO2 <- BW.all_data$Brn$Brn.NO2%>% 
+Brn_NO2 <- BW.all_data$Brn$NO2%>% 
   filter(NO2 != is.na(NO2))
 Brn_dat <- inner_join(Brn_NO2,Brn_Temp)
 Brn_dat <- Brn_dat %>% 
@@ -142,7 +143,7 @@ Brn_qnt <- tibble ( NO2_qnt =stats::quantile(Brn_dat$NO2_fit),
                       Heizg_qnt=stats::quantile(Brn_dat$Heizg_fit))
 Brn_qnt$perc <- c("Min","25%","Median","75%","Max")
 fct <- cal_fac(Can_qnt = Brn_qnt)%>% unclass() # [1] 1.524818
-WWimm <- Brn_qnt$Heizg_qnt[[3]]*.2*fct # [1] 1.598091
+WWimm <- Brn_qnt$Heizg_qnt[[3]]*.2*fct # [1] [1] 3.020678
 Brn_dat <- Brn_dat%>% mutate(Heizimm = Heizg_fit*fct+WWimm)
 # Darstellung als plot
 Brn_dat %>% filter(datetime > ymd("2000-06-30")&datetime < ymd("2019-07-01"))%>%
@@ -155,7 +156,7 @@ Brn_dat %>% filter(datetime > ymd("2000-06-30")&datetime < ymd("2019-07-01"))%>%
           06/2000 bis 06/2019" )+
   labs (x = "",y = "NO2 [μg/m3]" )
 Brn_dat %>% summarise(NO2_Mittel= mean(NO2_fit),
-                        NO2_Heizg = mean(Heizimm))#30.8      9.56
+                        NO2_Heizg = mean(Heizimm))#30.8  18.1
 cor(Brn_dat$NO2_fit,Brn_dat$Heizimm)
 Brn_dat %>% 
   filter(datetime >= ymd("2014-01-01")&datetime <ymd ("2018-12-31"))%>%
@@ -164,9 +165,9 @@ Brn_dat %>%
   geom_line(aes(y =Temp.fit),col = "red")
 
 # Schwäbische Alb
-Alb_NO2 <- BW.all_data %>% .$Alb %>% .$Alb.NO2%>%
+Alb_NO2 <- BW.all_data %>% .$Alb %>% .$NO2%>%
   filter(!is.na(NO2))
-Alb_Temp <- BW.all_data$Alb$Alb.Temp %>% 
+Alb_Temp <- BW.all_data$Alb$Temp %>% 
   filter(!is.na(Temp))
 
 Alb_dat <- inner_join(Alb_NO2,Alb_Temp)
@@ -201,7 +202,7 @@ Alb_dat %>% filter(datetime > ymd("2000-06-30")&datetime < ymd("2019-07-01"))%>%
   labs (x = "",y = "NO2 [μg/m3]" )
 summary(Alb_dat)
 Alb_dat_select <-Alb_dat %>% filter(datetime > ymd("2000-06-30")&datetime < ymd("2019-07-01"))
-cor(Alb_dat_select$NO2_fit,Alb_dat_select$Heizimm)  
+cor(Alb_dat_select$NO2_fit,Alb_dat_select$Heizimm)  #[1] 0.9480838
 tail(Alb_dat_select)
 Alb_dat %>% summarise(NO2_Mittel= mean(NO2_fit),
                       NO2_Heizg = mean(Heizimm))
