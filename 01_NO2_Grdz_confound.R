@@ -4,16 +4,22 @@ library(lubridate)
 library(broom)
 library(gridExtra)
 library(modelr)
+library(stringr)
 options(digits = 3)
+BW_Rdat_path <- "~/Documents/Luftqualitaet/Daten/BW_Rdat/"
+# 17 Stationen mehrere Parameter
 load("~/Documents/Luftqualitaet/Daten/BW_Rdat/BW_station.RData")
-url_BW_Rdat <- "~/Documents/Luftqualitaet/Daten/BW_Rdat/"
-summary(BW_station_data$Freiburg$NO2)
-load(file.path(url_BW_Rdat,"BW_stations_NO2_tbl.RData"))
-levels(BW_stations_NO2_tbl$name)
+summary(BW_station_data$Freiburg)
+# 15 Stationen NO2  + Zeitparameter
+load(file.path(BW_Rdat_path,"BW_stations_NO2_tbl.RData"))
+head(BW_stations_NO2_tbl,2)
+     levels(BW_stations_NO2_tbl$name)
 BW_stations_NO2_tbl%>% filter(name== "Friedri")
- Nck_NO2 <- BW_stations_NO2_tbl %>%  filter (name == "Nck")%>%
-summarise(augment(lm(NO2 ~datetime,data = .))) #%>%
-Nck_NO2 %>%  ggplot(aes(x = datetime))+
+# Berechnung der Regressionsgeraden
+Nck_NO2_lm <- BW_stations_NO2_tbl %>%  filter (name == "Nck")%>%
+summarise(name,augment(lm(NO2 ~datetime,data = .))) 
+head(Nck_NO2_lm)
+Nck_NO2_lm %>%  ggplot(aes(x = datetime))+
   geom_line(aes(y= .fitted),col ="black")+
   geom_smooth(aes(y = .resid),col = "red",linetype = 2)+
   geom_smooth(aes(y = NO2),col = "red",linetype = 1)+
@@ -25,7 +31,7 @@ Trend(schw.Linie) &
 # als Funktion
 detrend_station <- function(df, nm) {
   loc_df <- df %>% filter( (name == nm)) %>%
-    summarise(augment(lm(NO2~ datetime, data = .)))
+    summarise(name,augment(lm(NO2~ datetime, data = .)))
   loc_df %>% ggplot(aes(x = datetime))+
     geom_line(aes(y= .fitted),col ="black")+
     geom_smooth(aes(y = .resid),col = "red",linetype = 2)+
@@ -36,7 +42,7 @@ detrend_station <- function(df, nm) {
 Trend(schw.Linie) & 
 Abweichung vom Trend (rot gestrichelt)")
 }
-Nck_NO2_detrend <- Nck_NO2 %>%dplyr::select(datetime,NO2_dtrd=.resid)
+Nck_NO2_detrend <- Nck_NO2_lm %>%dplyr::select(name,datetime,NO2_dtrd=.resid)
 detrend_station(BW_stations_NO2_tbl,nm = "Rt_leder")
 detrend_station(BW_stations_NO2_tbl,nm = "Can")
 detrend_station(BW_stations_NO2_tbl,nm = "Rt_pomol")
@@ -47,16 +53,19 @@ detrend_station(BW_stations_NO2_tbl,nm = "Brn")
 # built a nested dataframe
 rural <- c("Alb","Odw","Sws")
 trafic <- c("Lbg_Friedr","Nck","Rt_leder")
+urbanbackgrd<-BW_stations_NO2_tbl$name%>%levels()%>% setdiff(c(rural,trafic))
+
 NO2_by_rural <- filter(BW_stations_NO2_tbl,name %in% rural)%>% 
   group_by(name,station) %>% nest()
 NO2_by_trafic <- filter(BW_stations_NO2_tbl,name %in% trafic)%>% 
   group_by(name,station) %>% nest()
-NO2_backgrd <-  filter(BW_stations_NO2_tbl,!name %in% rural)
-NO2_backgrd <-filter(NO2_backgrd,!name %in% trafic) 
-NO2_bckgrd <-NO2_backgrd %>%  group_by(name,station) %>% nest()
+NO2_urban_backgrd<-  filter(BW_stations_NO2_tbl,name %in% urbanbackgrd)%>%
+  group_by(name,station)%>%
+  nest()
+
 #nested data frame, each row is a group
-NO2_bckgrd 
-# apply function to evry dataframe
+NO2_urban_backgrd
+# apply function to every dataframe
 ## make function
 name_model <- function(df){
   lm(NO2 ~ datetime, data = df)
