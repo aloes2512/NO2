@@ -5,13 +5,12 @@ library(broom)
 library(gridExtra)
 library(modelr)
 options(digits = 3)
-load("~/Documents/Luftqualitaet/Analysen/BW_station.RData")
-levels(BW_stations_NO2_tbl$name)<- levels(BW_stations_NO2_tbl$name) %>% 
-  recode("Rt_"="Rt_pomol","Rtl"="Rt_leder",
-         "Lbg_4"="Lbg_weimar","Frei"= "Freiburg",
-         "Heid"="Heidelbg","Heil"="Heilbrn") 
-BW_stations_NO2_tbl$NO2 <- BW_stations_NO2_tbl$NO2 %>% na.locf()
-BW_stations_NO2_tbl$station <- BW_stations_NO2_tbl$station %>% as_factor()
+load("~/Documents/Luftqualitaet/Daten/BW_Rdat/BW_station.RData")
+url_BW_Rdat <- "~/Documents/Luftqualitaet/Daten/BW_Rdat/"
+summary(BW_station_data$Freiburg$NO2)
+load(file.path(url_BW_Rdat,"BW_stations_NO2_tbl.RData"))
+levels(BW_stations_NO2_tbl$name)
+BW_stations_NO2_tbl%>% filter(name== "Friedri")
  Nck_NO2 <- BW_stations_NO2_tbl %>%  filter (name == "Nck")%>%
 summarise(augment(lm(NO2 ~datetime,data = .))) #%>%
 Nck_NO2 %>%  ggplot(aes(x = datetime))+
