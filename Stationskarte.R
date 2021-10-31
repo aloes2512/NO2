@@ -1,12 +1,12 @@
 #Stationskarte
 library(tidyverse)
 library(ggmap)
-load("~/Documents/Luftqualitaet/Analysen/NO2/BW_stations_list.RData")
+load("~/projects/NO2/BW_stations_list.RData")
 Stationsliste %>% head()
 lonlat <- Stationsliste %>% dplyr::select("longitude","latitude")
 # Google Cloud Platform zur Erstellung von API im Adressbuch gespeichert
 #findkey in Notizen# Lookup in gitignore
-# # Ist API unter der Geolocation angmeldet wurde
+# # Ist API unter der Geolocation angemeldet wurde
 # Kartendarstellung
 Meta_station <- Stationsliste %>% 
   dplyr::select(ID = "Station",
@@ -16,6 +16,7 @@ Meta_station <- Stationsliste %>%
                 )
 # Karte von Google herunterladen 
 #zunächst registrieren mit register_google("key")
+register_google("AIzaSyAlBb7-UOG2KxBihE3G8u354Ren32_hjYI")
 map <- get_googlemap( c(lon = 8.5 , lat = 48.55), zoom = 8,type = "roadmap")
 map_BW <- map
 BW_Uebersichtskarte <- ggmap(map_BW,maptype = "roadmap") + 
@@ -29,7 +30,7 @@ untersuchte Messstationen")+
         axis.title.y = element_text(colour = "white"),
         axis.text.x = element_text(colour = "black"),
         axis.text.y = element_text(colour = "black"))
-ggsave(BW_Uebersichtskarte, filename = "Reports/BW_Uebersichtskarte.png")
+ggsave(BW_Uebersichtskarte, filename = "plts/BW_Uebersichtskarte.png")
 print(BW_Uebersichtskarte)
 # Nur Stuttgart
 # Innenstadt
@@ -47,7 +48,7 @@ Stgt_Innenstadt_Stationen <- ggmap(map_Stgt.14,maptype = "watercolor")+
         axis.title.y = element_text(colour = "white"),
         axis.text.x = element_text(colour = "black"),
         axis.text.y = element_text(colour = "black"))
-ggsave(Stgt_Innenstadt_Stationen, filename = "Reports/Stgt_Innenstadt_Stationen.png")
+ggsave(Stgt_Innenstadt_Stationen, filename = "plts/Stgt_Innenstadt_Stationen.png")
 print(Stgt_Innenstadt_Stationen)
 # Stuttgart gesamt
 map_Stgt_13 <- get_map(c(lon = 9.179, lat = 48.782), zoom = 13)
@@ -56,27 +57,27 @@ Stuttgart_Gesamt <-ggmap(map_Stgt_13,maptype = "watercolor")+
              size = 7, shape = 20,col = "red")+
   geom_point(data = lonlat,aes(x = longitude,y = latitude),
              size = 7, shape = 12,col = "black")+
-  ggtitle(" LUBW Messtationen Stuttgart 
-          Gesamt")+
+  ggtitle(" LUBW Messtationen 
+    Stadt Stuttgart")+
   theme(axis.title.x = element_text(colour = "white"),
         axis.title.y = element_text(colour = "white"),
         axis.text.x = element_text(colour = "black"),
         axis.text.y = element_text(colour = "black"))
-ggsave(Stuttgart_Gesamt, filename = "Reports/Stuttgart_Gesamt.png")
+ggsave(Stuttgart_Gesamt, filename = "plts/Stuttgart_Gesamt.png")
 print(Stuttgart_Gesamt)
 # Großraum Stuttgart
 # Kartendarstellung
 map <- get_map( c(lon = 9.179 , lat = 48.783), zoom = "auto")
-Stgt_map <- ggmap(map) + 
+BW_sw <- ggmap(map) + 
   #geom_point(data = Meta_station, aes(x = longitude, y = latitude),
   #           size = 6,shape = 1,col = "red") + 
   geom_point(data = lonlat,aes(x = longitude,y = latitude),
              size = 2, shape = 10,col = "black")+
-  ggtitle ("Großraum Stuttgart
+  ggtitle ("Region Stuttgart
 14 Messtationen")+
   theme(axis.title.x = element_text(colour = "white"),
         axis.title.y = element_text(colour = "white"),
         axis.text.x = element_text(colour = "black"),
         axis.text.y = element_text(colour = "black"))
-ggsave(Stgt_map, filename = "Reports/Stgt_map.png")
-print(Stgt_map) 
+ggsave(BW_sw, filename = "plts/BW_sw.png")
+print(BW_sw) 
